@@ -41,12 +41,15 @@ while username not in userRegistry:
             if password == passKey: 
                 print("access granted..")
                 break
-            else: 
+            elif password != passKey: 
+                
                 if numtrys == 0:
                     print("maximum attempts reached. access locked")
-                    quit
+                    quit()
+                    
                 print(f"access denied.\n you have {numtrys} left.")
                 numtrys -= 1
+                
                 
     else:
         print("user has not been registered.")
