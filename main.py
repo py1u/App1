@@ -2,6 +2,8 @@
 #
 
 import time
+curr_time = time.strftime("%H:%M:%S", time.localtime())
+print("Current Time is :", curr_time)
 
 userRegistry = []
 passKey = "novaboba"
@@ -10,7 +12,7 @@ password = "0-aifa;dfjadfja;lfj"
 numtrys = 3
 
 
-def Todo(prompt):
+def Todo():
     print("choose a action: 1,2,3")
     print("1.Add: add a task to your list")
     print("2.Show: display all task")
@@ -40,7 +42,7 @@ while username not in userRegistry:
             password = input("Enter password:")
             if password == passKey: 
                 print("access granted..")
-                break
+                Todo()
             elif password != passKey: 
                 
                 if numtrys == 0:
