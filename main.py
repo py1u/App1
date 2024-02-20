@@ -6,6 +6,7 @@ curr_time = time.strftime("%H:%M:%S", time.localtime())
 print("Current Time is :", curr_time)
 
 userRegistry = []
+TodoList = []
 passKey = "novaboba"
 username = ";lkadjf;akdfj;akfj"
 password = "0-aifa;dfjadfja;lfj"
@@ -13,10 +14,25 @@ numtrys = 3
 
 
 def Todo():
-    print("choose a action:")
     print("1.\"add\": add a task to your list")
     print("2.\"show\": display all tasks")
     print("3.\"edit\": edit a task in your list")
+    
+    
+    userAction = input("choose a action: ")
+    match userAction:
+        
+        case "add":
+            print("added successfully:")
+        
+        case "show":
+            print("showing your Todo List:")
+        
+        case "edit":
+            print("editted sucessfully")
+
+    
+    
     
 def giveRegisterCount(userRegistry):
     
