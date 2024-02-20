@@ -13,10 +13,10 @@ numtrys = 3
 
 
 def Todo():
-    print("choose a action: 1,2,3")
-    print("1.Add: add a task to your list")
-    print("2.Show: display all task")
-    print("3.Edit: edit a task in your list")
+    print("choose a action:")
+    print("1.\"add\": add a task to your list")
+    print("2.\"show\": display all tasks")
+    print("3.\"edit\": edit a task in your list")
     
 def giveRegisterCount(userRegistry):
     
