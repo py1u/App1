@@ -1,16 +1,23 @@
-# This is a sample Python script.
+# App1 is a Todo list App
+#
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def Todo(prompt):
+    print("choose a action: 1,2,3")
+    print("1.Add: add a task to your list")
+    print("2.Show: display all task")
+    print("3.Edit: edit a task in your list")
+    
+    
+    
+    
+#input will be a task in a string format
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+username = input("Enter username:")
+password = input("Enter username:")
+password = "bobanova"
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+while password != password
+if (password == prompt):
+    print("Access granted..")
+    print("Loading List for: ")
