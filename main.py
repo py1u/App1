@@ -41,15 +41,20 @@ while username not in userRegistry:
             if password == passKey: 
                 print("access granted..")
                 break
-            else: print(f"access denied.\n you have {numtrys} left.")
+            else: 
+                if numtrys == 0:
+                    print("maximum attempts reached. access locked")
+                    quit
+                print(f"access denied.\n you have {numtrys} left.")
+                numtrys -= 1
+                
     else:
         print("user has not been registered.")
         reg_choice = input("would you like to add a user to the registry?(y/n) ")
         if reg_choice == 'y':
             registerUser(userRegistry)
             
-        elif reg_choice != 'y':
-            print("bye")
+            
         
 
 
