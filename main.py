@@ -1,16 +1,7 @@
 # App1 is a Todo list App
-#
 
-
-userRegistry = []
 TodoList = []
-passKey = "novaboba"
-username = ";lkadjf;akdfj;akfj"
-password = "0-aifa;dfjadfja;lfj"
-numtrys = 3
-
-
-def Todo():
+def doTodo():
     print("1.\"add\": add a task to your list")
     print("2.\"show\": display all tasks")
     print("3.\"edit\": edit a task in your list")
@@ -44,36 +35,49 @@ def registerUser(userRegistry):
     return userRegistry
     
 
-while username not in userRegistry:
-    #check username is in registry
-    username = input("Enter username:")
-
-    if username in userRegistry:
-        #go onto password    
-        while password != passKey: 
-            
-            password = input("Enter password:")
-            if password == passKey: 
-                print("access granted..")
-                Todo()
-            elif password != passKey: 
-                
-                if numtrys == 0:
-                    print("maximum attempts reached. access locked")
-                    quit()
-                    
-                print(f"access denied.\n you have {numtrys} left.")
-                numtrys -= 1
-                
-                
-    else:
-        print("user has not been registered.")
-        reg_choice = input("would you like to add a user to the registry?(y/n) ")
-        if reg_choice == 'y':
-            registerUser(userRegistry)
-            
-            
+def todoAuth():
+    #creation during auth
+    userRegistry = []
+    username = ''
+    numtrys = 3
+    userAuth = False;
+    passAuth = False;
+    passKey = "bobanova"
+    
+    while userAuth == False:
         
+        username = input("Enter username:")
+
+        if username in userRegistry:
+            userAuth = True
+            
+            while passAuth == False: 
+                
+                password = input("PassKey:")
+                if password == passKey: 
+                    print("access granted..")
+                    doTodo()
+                    passAuth = True
+                elif password != passKey: 
+                    
+                    if numtrys == 0:
+                        print("maximum attempts reached. access locked")
+                        quit()
+                        
+                    print(f"access denied.\n you have {numtrys} left.")
+                    numtrys -= 1
+                    
+                    
+        else:
+            print("user has not been registered.")
+            reg_choice = input("would you like to add a user to the registry?(y/n) ")
+            if reg_choice == 'y':
+                registerUser(userRegistry)
+            
+            
+#call auth for todo app start
+print("Starting App..\n")
+todoAuth()
 
 
 
