@@ -22,7 +22,8 @@ def doTodo():
         
         case "edit":
             index = int(input("what todo would you like to change?"))
-            new_todo = inp
+            new_todo = input("what do you want to change it to?")
+            TodoList[index] = new_todo
             print("editted sucessfully")
 
     
