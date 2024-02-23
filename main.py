@@ -11,12 +11,18 @@ def doTodo():
     match userAction:
         
         case "add":
+            todo = input("enter a task: ")
+            TodoList.append(todo)
             print("added successfully:")
         
         case "show":
             print("showing your Todo List:")
+            print(TodoList)
+            
         
         case "edit":
+            index = int(input("what todo would you like to change?"))
+            new_todo = inp
             print("editted sucessfully")
 
     
