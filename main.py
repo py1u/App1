@@ -25,7 +25,7 @@ def doTodo():
                 validIndex = False
                 while validIndex == False:
                     index = int(input("which todo would you like to change? "))
-                    if index in len(TodoList):
+                    if index > len(TodoList) or index < len(TodoList) or index == 0:
                         validIndex = True
                         new_todo = input("enter replacement task: ")
                         TodoList[index - 1] = new_todo
