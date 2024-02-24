@@ -2,14 +2,16 @@
 
 TodoList = []
 def doTodo():
-    print("1.\"add\": add a task to your list")
-    print("2.\"show\": display all tasks")
-    print("3.\"edit\": edit a task in your list")
-    print("or quit")
+    print("1.add a task")
+    print("2.show all tasks")
+    print("3.edit a task")
+    print("quit")
     
-    
-    userAction = input("choose a action: ")    
-    while userAction != "quit":
+    runTodo = True   
+    while runTodo != False:
+        #ask for user action
+        userAction = input("\nchoose a action: ")
+        
         match userAction:
             
             case "add":
@@ -25,12 +27,17 @@ def doTodo():
             case "edit":
                 index = int(input("what todo would you like to change?"))
                 new_todo = input("what do you want to change it to?")
-                TodoList[index] = new_todo
-                print("editted sucessfully")
+                TodoList[index - 1] = new_todo
+                print("edited sucessfully")
             
             case "quit":
                 print("exiting todo list..")
-                break
+                runTodo = False
+                
+            case _ :
+                print("invalid input try again.")
+                
+            
 
     
     
