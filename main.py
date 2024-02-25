@@ -20,19 +20,30 @@ def doTodo():
                 print("showing your Todo List:")
                 i = 0
                 for todo_at in TodoList:
-                    print(TodoList[i])
+                    print(f"task {i + 1}:",TodoList[i])
                     i+= 1
+                print("number of tasks:", len(TodoList))
                 
             
             case "edit":
                 validIndex = False
                 while validIndex == False:
                     index = int(input("which todo would you like to change? "))
-                    if index > len(TodoList) or index < len(TodoList) or index == 0:
+                    if index > 0 and index < len(TodoList) and index == -1:
+                        
+                        checkConfirm = False
                         validIndex = True
+                        curr_todo = TodoList[index - 1]
+                        index = index - 1
                         new_todo = input("enter replacement task: ")
-                        TodoList[index - 1] = new_todo
-                        print("edited sucessfully")
+                        
+                        comfirm_choice = input("Comfirm Change?(y/n)")
+                        if comfirm_choice == 'y':
+                            TodoList[index] = new_todo
+                            print("edited sucessfully")
+                        else:
+                            print("edit cancelled")
+                        
                     else:
                         print("index supplied not in range, try again.")
             
