@@ -18,7 +18,10 @@ def doTodo():
             
             case "show":
                 print("showing your Todo List:")
-                print(TodoList)
+                i = 0
+                for todo_at in TodoList:
+                    print(TodoList[i])
+                    i+= 1
                 
             
             case "edit":
