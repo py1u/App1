@@ -1,7 +1,7 @@
 # App1 is a Todo list App
 
 TodoList = []
-def doTodo():
+def do_todo():
     print("add, show, edit, or quit")
     
     runTodo = True   
