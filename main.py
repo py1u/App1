@@ -29,7 +29,7 @@ def doTodo():
                 validIndex = False
                 while validIndex == False:
                     index = int(input("which todo would you like to change? "))
-                    if index > 0 and index < len(TodoList) and index == -1:
+                    if index > 0 and index <= len(TodoList):
                         
                         checkConfirm = False
                         validIndex = True
