@@ -2,5 +2,8 @@
 #     print(i,j)
 
 
-a = enumerate(['1', '3', '5'])
-print(list(a))
+# a = enumerate(['1', '3', '5'])
+# print(list(a))
+
+b = enumerate("Hello")
+print(list(b))
