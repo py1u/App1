@@ -11,7 +11,7 @@ while True:
                 
         case 'show':
             for index, item in enumerate(todos):
-                    row= f"{index}.{item}"
+                    row= f"{index + 1}.{item}"
                     print(row)
         
         case 'edit':
@@ -20,5 +20,9 @@ while True:
             new_todo = input("Enter new todo:")
             todos[number] = new_todo
         
+        case 'complete':
+            number = int(input("Number of todo to complete:"))
+            todos.pop(number - 1)
+    
         case 'quit':
             break
