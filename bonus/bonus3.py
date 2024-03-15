@@ -1,10 +1,9 @@
-waiting_list = ["Cen", "Aen", "Bohn"]
+print("an example of i,j index variables\n")
+print("for i index:\n")
 
-sorted_list = waiting_list.sort(reverse = True)
+for i,j in enumerate("abcd"):
+    print(f"Printing {i}")
 
-for index, item in enumerate(waiting_list):
-    
-    row = f"{index + 1}.{item.capitalize()}"
-    print(row)
-    
-print("done!")
+print("for j index:\n")
+for i,j in enumerate("abcd"):
+    print(f"Printing {j}")
