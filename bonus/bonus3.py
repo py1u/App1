@@ -1,9 +1,4 @@
-print("an example of i,j index variables\n")
-print("for i index:\n")
+filenames = ['document', 'report', 'presentation']
 
-for i,j in enumerate("abcd"):
-    print(f"Printing {i}")
-
-print("for j index:\n")
-for i,j in enumerate("abcd"):
-    print(f"Printing {j}")
+for i,j in enumerate(filenames):
+    print(f"{i}-{j}.txt")
