@@ -1,6 +1,6 @@
 waiting_list = ["Cen", "Aen", "Bohn"]
 
-sorted_list = waiting_list.sort()
+sorted_list = waiting_list.sort(reverse = True)
 
 for index, item in enumerate(waiting_list):
     
