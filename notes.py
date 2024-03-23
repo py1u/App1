@@ -187,14 +187,16 @@ for seconds in range(10,0,-1):
 
 print("Happy New Year")
 
-f strings used for simpler string interpolation with variables
+# f strings used for simpler string interpolation with variables
 number = 13
 print(f"this number is {number}")
-lets say item = apple
+
+#lets say item = apple
 f"{index}).{item}" which prints 0.apple
 
-enumerate function
+#the enumerate function
 enumerate(list_name)
-requires two indexing variables: i,j
-i prints the index of the array, j prints the actual item
+#requires two indexing variables: i,j
+#i prints the index of the array, j prints the actual item
 
+#you can use more than two indexing variables:
