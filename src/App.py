@@ -13,6 +13,7 @@ while True:
 
             file = open('todos.txt', 'w')
             file.writelines(todos)
+            file.close()
         case 'show':
             for index, item in enumerate(todos):
                 row = f"{index + 1}.{item}"
