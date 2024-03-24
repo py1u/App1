@@ -214,3 +214,6 @@ file = open('todos.txt', 'w')
 # first string is the file directory, second string is w for write
 file.writelines(todos)
 #writelines() is a method that will write to your txt file
+
+# open() will create a new file if it doesn't exist, it if already exists, it will override the old folder
+#write() dont produce newlines unless stated with newline '\n'

@@ -1,5 +1,5 @@
 while True:
-    user_action = input("Type add, show,edi, complete or exit:")
+    user_action = input("Type add, show,edit, complete or quit:")
     user_action = user_action.strip()
     
     match user_action:
@@ -27,4 +27,5 @@ while True:
             number = int(input("Number of todo to complete:"))
             todos.pop(number - 1)
         case 'quit':
+            print("Bye!")
             break
