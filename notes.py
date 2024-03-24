@@ -217,3 +217,5 @@ file.writelines(todos)
 
 # open() will create a new file if it doesn't exist, it if already exists, it will override the old folder
 #write() dont produce newlines unless stated with newline '\n'
+
+# zip() is similar to enumerate() but instead with two lists it will allow you to group a item, item instead of index,item
