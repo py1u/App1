@@ -200,3 +200,12 @@ enumerate(list_name)
 #i prints the index of the array, j prints the actual item
 
 #you can use more than two indexing variables:
+buttons = [('John', 'Sen', 'Morro'), ('Lin', 'Ajay', 'Filip')]
+for first, second, third in buttons:
+    print(first, second, third)
+#output would be  John Sen Morro and Lin Ajay Filip in second line right below
+
+# lists vs arrays
+# both have the same initalization: variable_name = [some data]
+# main difference is list can have items of different data types, array only has same data types
+
