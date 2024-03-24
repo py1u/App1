@@ -209,3 +209,8 @@ for first, second, third in buttons:
 # both have the same initalization: variable_name = [some data]
 # main difference is list can have items of different data types, array only has same data types
 
+#lets write to a file to store basic user items as data
+file = open('todos.txt', 'w')
+# first string is the file directory, second string is w for write
+file.writelines(todos)
+#writelines() is a method that will write to your txt file
