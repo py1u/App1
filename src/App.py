@@ -1,5 +1,5 @@
 while True:
-    user_action = input("Type add, show, edit, complete, or quit:")
+    user_action = input("Type add, show, edit, complete, or quit: ")
     user_action = user_action.strip()
     
     match user_action:
@@ -15,6 +15,10 @@ while True:
             file.writelines(todos)
             file.close()
         case 'show':
+            file = open('todos.txt', 'r')
+            todos = file.readlines()
+            file.close()
+
             for index, item in enumerate(todos):
                 row = f"{index + 1}.{item}"
                 print(row)

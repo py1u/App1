@@ -19,6 +19,7 @@ def do_todo():
                 print("added successfully")
 
             case "show":
+
                 print("showing your Todo List:")
                 i = 0
                 for todo_at in TodoList:
