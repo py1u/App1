@@ -19,6 +19,7 @@ def do_todo():
                 print("added successfully")
 
             case "show":
+
                 print("showing your Todo List:")
                 i = 0
                 for todo_at in TodoList:
@@ -38,8 +39,8 @@ def do_todo():
                         index = index - 1
                         new_todo = input("enter replacement task: ")
 
-                        comfirm_choice = input("Comfirm Change?(y/n)")
-                        if comfirm_choice == 'y':
+                        confirm_choice = input("Confirm Change?(y/n)")
+                        if confirm_choice == 'y':
                             TodoList[index] = new_todo
                             print("edited sucessfully")
                         else:
