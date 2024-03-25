@@ -23,6 +23,7 @@ while True:
                 row = f"{index + 1}.{item}"
                 print(row)
         case 'edit':
+            file = open('todos.txt', 'w')
             number = int(input("Number of todo to edit:"))
             number = number - 1
             new_todo = input("Enter new todo:")
