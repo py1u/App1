@@ -232,3 +232,6 @@ goals = ["LeetCode easy 1 a day",
 intro = "Hello, this is a " \
         "file for python notes"
 
+strip() #a method that removes a character from a string when specified ex.
+strip('\n') # will remove the newline inside a string
+
