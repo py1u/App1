@@ -215,7 +215,20 @@ file = open('todos.txt', 'w')
 file.writelines(todos)
 #writelines() is a method that will write to your txt file
 
-# open() will create a new file if it doesn't exist, it if already exists, it will override the old folder
-#write() dont produce newlines unless stated with newline '\n'
+open() #will create a new file if it doesn't exist, it if already exists, it will override the old folder
+write() #dont produce newlines unless stated with newline '\n'
 
-# zip() is similar to enumerate() but instead with two lists it will allow you to group a item, item instead of index,item
+#
+zip() #is similar to enumerate() but instead with two lists it will allow you to group a item, item instead of index,item
+
+read() # reads a entire file as a string
+readline() # reads a single line in a file
+
+#how to modify a list into shorter newline sections:
+goals = ["LeetCode easy 1 a day",
+         "Network 5 people, and apply 10 jobs",
+         "Work on Artr Login page"]
+#can be done with a single long string as well:
+intro = "Hello, this is a " \
+        "file for python notes"
+
