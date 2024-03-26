@@ -235,3 +235,46 @@ intro = "Hello, this is a " \
 strip() #a method that removes a character from a string when specified ex.
 strip('\n') # will remove the newline inside a string
 
+'''
+comment tip: only comment when you want to
+tell something useful to a programmer, not what does the syntax mean
+ or what the function is doing
+'''
+
+new = []
+
+for i in [1, 2, 3]:
+    new.append(i + 10)
+
+print(new)
+
+# A list comprehension can't always do the same thing a for-loop does,
+# but when it does, the list comprehension becomes the preferred method since it uses less code.
+
+old = [1,2,3]
+new = [i + 10 for i in old]
+print(new)
+
+# another example:
+
+names = ["john smith", "jay santi", "eva kuki"]
+
+new_names = []
+for index in range(len(names)):
+    new_name = names[index].title()
+    new_names.append(new_name)
+
+print(new_names)
+
+#using list comprehension reduces our code
+names = ["john smith", "jay santi", "eva kuki"]
+names = [item.title() for item in names]
+print(new_names)
+
+#case where we use assignment operator inside a expression, so = becomes :=
+
+user_entries = ['10', '19.1', '20']
+sum = 0.0
+user_entries = [sum := sum + float(item) for item in user_entries]
+print(sum)
+# sum is 49.1
