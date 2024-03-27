@@ -1,5 +1,0 @@
-Code daliy
-Code
-ReactJs
-Commit
-Leetcode

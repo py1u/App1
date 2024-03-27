@@ -278,3 +278,17 @@ sum = 0.0
 user_entries = [sum := sum + float(item) for item in user_entries]
 print(sum)
 # sum is 49.1
+
+# you can reduce the lines of code for file read write operations
+
+with open('todos.txt', 'r') as file:
+    todos = file.readlines()
+
+#this is the same as our original longer code
+
+file = open('todos.txt', 'r')
+todos = file.readlines()
+file.close()
+
+#the simpler code does open and close as well as file variable assignment
+
