@@ -38,10 +38,10 @@ while True:
 
         # print("Here is how it will be", todos)
     elif 'complete' in user_action:
-        number = int(input("Number of todo to complete:"))
+        number = int(user_action[9:])
+
         with open('todos.txt', 'r') as file:
             todos = file.readlines()
-
         index = number - 1
         todo_to_remove = todos[index].strip('\n')
         todos.pop(index)
@@ -54,3 +54,6 @@ while True:
     elif 'exit' in user_action:
         print("Bye!")
         break
+
+    else:
+        print("Command is not valid.")
