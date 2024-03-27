@@ -298,3 +298,7 @@ file.close()
 # Q: How is the with-context manager actually able to close the file when we are not including the close() method?
 # A: The close() method is called implicitly even though we don't call it explicitly.
 # The Python interpreter will call the method when it sees that we have written a with-context manager.)
+
+'add' in 'add Play chess'
+# the 'in' operator whether a string or character is in the given text supplied.
+# returns true since add is in the text
