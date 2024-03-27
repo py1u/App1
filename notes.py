@@ -224,6 +224,10 @@ zip() #is similar to enumerate() but instead with two lists it will allow you to
 read() # reads a entire file as a string
 readline() # reads a single line in a file
 
+# Q: When should I use read() and when readlines()?
+# A: If you want to get all the text as one single string, use read().
+# If you want to get separate strings for each line, use readlines()
+
 #how to modify a list into shorter newline sections:
 goals = ["LeetCode easy 1 a day",
          "Network 5 people, and apply 10 jobs",
@@ -291,4 +295,6 @@ todos = file.readlines()
 file.close()
 
 #the simpler code does open and close as well as file variable assignment
-
+# Q: How is the with-context manager actually able to close the file when we are not including the close() method?
+# A: The close() method is called implicitly even though we don't call it explicitly.
+# The Python interpreter will call the method when it sees that we have written a with-context manager.)
