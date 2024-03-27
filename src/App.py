@@ -51,6 +51,7 @@ while True:
                 file.writelines(todos)
 
             message = f"Todo {todo_to_remove} was removed from list."
+            print(message)
         case 'exit':
             print("Bye!")
             break

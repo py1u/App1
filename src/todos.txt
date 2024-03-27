@@ -1,2 +1,2 @@
 Artr Documentation needed
-Learn ReactJS as well
+Focus on grades this quarter
