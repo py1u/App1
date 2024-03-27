@@ -1,2 +1,3 @@
 Artr Documentation needed
-Focus on grades this quarter
+Get 4 As
+Learn Python dailyadd --all

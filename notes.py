@@ -302,3 +302,15 @@ file.close()
 'add' in 'add Play chess'
 # the 'in' operator whether a string or character is in the given text supplied.
 # returns true since add is in the text
+
+# string slicing involves extracting a part of a string by the index starting 0
+word = "add Eat a apple"
+word[4:] # returns 'Eat a apple' 4 is included, : means we go until the end
+word[0:3 # returns add 0 is included, 3 is not included]
+
+if # executes code block if true
+
+elif # when paired with a if statement that is false, elif is checked next, you can have multiple elifs
+
+else # when paired with a if statement, it always executes when if condition is false
+# known as a if-else statement
