@@ -1,5 +1,5 @@
 while True:
-    user_action = input("Type add, show, edit, complete, or quit: ")
+    user_action = input("Type add, show, edit, complete, or exit: ")
     user_action = user_action.strip()
     
     match user_action:
@@ -39,9 +39,18 @@ while True:
 
             # print("Here is how it will be", todos)
         case 'complete':
-
             number = int(input("Number of todo to complete:"))
-            todos.pop(number - 1)
-        case 'quit':
+            with open('todos.txt', 'r') as file:
+                todos = file.readlines()
+
+            index = number - 1
+            todo_to_remove = todos[index].strip('\n')
+            todos.pop(index)
+
+            with open('todos.txt', 'w') as file:
+                file.writelines(todos)
+
+            message = f"Todo {todo_to_remove} was removed from list."
+        case 'exit':
             print("Bye!")
             break

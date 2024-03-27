@@ -1,5 +1,2 @@
-Code daliy
-Code
-ReactJs
-Commit
-Leetcode
+Artr Documentation needed
+Learn ReactJS as well
