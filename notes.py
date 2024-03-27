@@ -287,7 +287,7 @@ print(sum)
 
 with open('todos.txt', 'r') as file:
     todos = file.readlines()
-
+#known as 'with context manager'
 #this is the same as our original longer code
 
 file = open('todos.txt', 'r')
