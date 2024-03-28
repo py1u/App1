@@ -19,5 +19,8 @@ for i in password:
         uppercase = True
 result.append(uppercase)
 
-print(result)
-print(all(result))
+if all(result):
+    print("Strong password")
+else:
+    print("Weak password")
+
