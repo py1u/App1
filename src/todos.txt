@@ -1,2 +1,3 @@
 Artr Documentation needed
-Learn ReactJS as well
+Get 4 As
+Learn Python dailyadd --all

@@ -224,6 +224,10 @@ zip() #is similar to enumerate() but instead with two lists it will allow you to
 read() # reads a entire file as a string
 readline() # reads a single line in a file
 
+# Q: When should I use read() and when readlines()?
+# A: If you want to get all the text as one single string, use read().
+# If you want to get separate strings for each line, use readlines()
+
 #how to modify a list into shorter newline sections:
 goals = ["LeetCode easy 1 a day",
          "Network 5 people, and apply 10 jobs",
@@ -283,7 +287,7 @@ print(sum)
 
 with open('todos.txt', 'r') as file:
     todos = file.readlines()
-
+#known as 'with context manager'
 #this is the same as our original longer code
 
 file = open('todos.txt', 'r')
@@ -291,4 +295,54 @@ todos = file.readlines()
 file.close()
 
 #the simpler code does open and close as well as file variable assignment
+# Q: How is the with-context manager actually able to close the file when we are not including the close() method?
+# A: The close() method is called implicitly even though we don't call it explicitly.
+# The Python interpreter will call the method when it sees that we have written a with-context manager.)
 
+'add' in 'add Play chess'
+# the 'in' operator whether a string or character is in the given text supplied.
+# returns true since add is in the text
+
+# string slicing involves extracting a part of a string by the index starting 0
+word = "add Eat a apple"
+word[4:] # returns 'Eat a apple' 4 is included, : means we go until the end
+word[0:3 # returns add 0 is included, 3 is not included]
+
+if # executes code block if true
+
+elif # when paired with a if statement that is false, elif is checked next, you can have multiple elifs
+
+else # when paired with a if statement, it always executes when if condition is false
+# known as a if-else statement
+
+#boolean operators
+# 'or' returns true so long as at least one condition is true
+a == 'true' or b == 'true' # returns True
+a == 'true' or b == 'false' # returns True
+
+# 'and' returns true so long as all conditions are true
+a == 'true' and b == 'true' # returns True
+a == 'true' and b == 'false' # returns False
+
+# we had the in operator
+if 'apple' in basket
+#we negation of it is
+if 'apple' not in basket
+
+word.isdigit() # a method that returns true or false if a character or string is entirely a digit"
+'apple' returns False
+'99a' returns False
+'510' returns True
+
+#dictionary: key value pairs data structure
+#keys are metadata, values are data we would like to access most of the time
+a = {'height':14, 'width':20,'depth':30}
+#used when data is different from each other, data values are unique
+a['height'] # access a item by its key which will return its value: 14
+#add a new item to a dictionary by
+a['newKey'] = 99 # when a key name is not in the dictionary, it gets appened to the dictionary
+#you cannot leave a key without a value or error
+result = {} # empty dictionary
+
+if all(result) # checks the keys which is all true
+        result.value() # checks the values instead
