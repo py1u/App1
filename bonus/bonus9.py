@@ -25,3 +25,6 @@ if all(result.values()):
 else:
     print("Weak password")
 
+# this is a tuple:
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
