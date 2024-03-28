@@ -335,11 +335,13 @@ word.isdigit() # a method that returns true or false if a character or string is
 '510' returns True
 
 #dictionary: key value pairs data structure
+#keys are metadata, values are data we would like to access most of the time
 a = {'height':14, 'width':20,'depth':30}
 #used when data is different from each other, data values are unique
 a['height'] # access a item by its key which will return its value: 14
 #add a new item to a dictionary by
-
+a['newKey'] = 99 # when a key name is not in the dictionary, it gets appened to the dictionary
+#you cannot leave a key without a value or error
 result = {} # empty dictionary
 
 if all(result) # checks the keys which is all true
