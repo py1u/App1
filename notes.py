@@ -314,3 +314,23 @@ elif # when paired with a if statement that is false, elif is checked next, you 
 
 else # when paired with a if statement, it always executes when if condition is false
 # known as a if-else statement
+
+#boolean operators
+# 'or' returns true so long as at least one condition is true
+a == 'true' or b == 'true' # returns True
+a == 'true' or b == 'false' # returns True
+
+# 'and' returns true so long as all conditions are true
+a == 'true' and b == 'true' # returns True
+a == 'true' and b == 'false' # returns False
+
+# we had the in operator
+if 'apple' in basket
+#we negation of it is
+if 'apple' not in basket
+
+word.isdigit() # a method that returns true or false if a character or string is entirely a digit"
+'apple' returns False
+'99a' returns False
+'510' returns True
+
