@@ -7,7 +7,7 @@ while True:
         with open('todos.txt', 'r') as file:
             todos = file.readlines()
 
-        todos.append(todo)
+        todos.append(todo + '\n')
 
         with open('todos.txt', 'w') as file:
             file.writelines(todos)
@@ -52,8 +52,9 @@ while True:
         message = f"Todo {todo_to_remove} was removed from list."
         print(message)
     elif 'exit' in user_action:
-        print("Bye!")
         break
 
     else:
         print("Command is not valid.")
+
+print("Bye!")
