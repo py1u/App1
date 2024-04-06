@@ -37,8 +37,7 @@ while True:
                 file.writelines(todos)
         except ValueError:
             print("Your command is not valid")
-            user_action = input("Type add, show, edit, complete, or exit: ")
-            user_action = user_action.strip()
+            continue
 
         # print("Here is how it will be", todos)
     elif user_action.startswith('complete'):
