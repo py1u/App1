@@ -346,3 +346,16 @@ result = {} # empty dictionary
 
 if all(result) # checks the keys which is all true
         result.value() # checks the values instead
+
+user_action.startswith("edit")
+#checks if variable user_action starts with 'edit' string
+
+# error handling helps users better understand if their input is correct
+# adding user friendly error instructions help improve user experience
+
+# try and except
+try:
+    #some code to try
+
+except ValueError:
+    #if we run into error something else happens here

@@ -2,7 +2,7 @@ while True:
     user_action = input("Type add, show, edit, complete, or exit: ")
     user_action = user_action.strip()
 
-    if 'add' in user_action or 'new' in user_action:
+    if user_action.startswith('add') or user_action.startswith('new'):
         todo = user_action[4:]
         with open('todos.txt', 'r') as file:
             todos = file.readlines()
@@ -11,7 +11,7 @@ while True:
 
         with open('todos.txt', 'w') as file:
             file.writelines(todos)
-    elif 'show' in user_action:
+    elif user_action.startswith('show'):
 
         with open('todos.txt', 'r') as file:
             todos = file.readlines()
@@ -20,24 +20,28 @@ while True:
             item = item.strip('\n')
             row = f"{index + 1}.{item}"
             print(row)
-    elif 'edit' in user_action:
+    elif user_action.startswith('edit'):
+        try:
+            number = int(user_action[5:])
+            print(f"edit #{number}")
+            number = number - 1
 
-        number = int(user_action[5:])
-        print(f"edit #{number}")
-        number = number - 1
+            with open('todos.txt', 'r') as file:
+                todos = file.readlines()
+            # print("here is todos existing", todos)
 
-        with open('todos.txt', 'r') as file:
-            todos = file.readlines()
-        # print("here is todos existing", todos)
+            new_todo = input("Enter new todo:")
+            todos[number] = new_todo + '\n'
 
-        new_todo = input("Enter new todo:")
-        todos[number] = new_todo + '\n'
-
-        with open('todos.txt', 'w') as file:
-            file.writelines(todos)
+            with open('todos.txt', 'w') as file:
+                file.writelines(todos)
+        except ValueError:
+            print("Your command is not valid")
+            user_action = input("Type add, show, edit, complete, or exit: ")
+            user_action = user_action.strip()
 
         # print("Here is how it will be", todos)
-    elif 'complete' in user_action:
+    elif user_action.startswith('complete'):
         number = int(user_action[9:])
 
         with open('todos.txt', 'r') as file:
@@ -51,7 +55,7 @@ while True:
 
         message = f"Todo {todo_to_remove} was removed from list."
         print(message)
-    elif 'exit' in user_action:
+    elif user_action.startswith('exit'):
         break
 
     else:

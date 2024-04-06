@@ -1,3 +1,2 @@
-Artr Documentation needed
+Finish Artr MERN stack presentation
 Get 4 As
-Learn Python dailyadd --all
