@@ -362,3 +362,9 @@ except ValueError:
 
 SyntaxError: # checks and returns error when a syntax is typed incorrectly
 # exceptions are logical errors
+
+# use if elif else when handling mutiple cases in exception handling
+
+exit # we use this to terminate the program
+exit("program exited") # you can add a print statement as well
+
