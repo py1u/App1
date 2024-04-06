@@ -355,7 +355,10 @@ user_action.startswith("edit")
 
 # try and except
 try:
-    #some code to try
+    # some code to try
 
 except ValueError:
-    #if we run into error something else happens here
+    # if we run into error something else happens here
+
+SyntaxError: # checks and returns error when a syntax is typed incorrectly
+# exceptions are logical errors
