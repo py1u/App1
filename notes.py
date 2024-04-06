@@ -353,7 +353,7 @@ user_action.startswith("edit")
 # error handling helps users better understand if their input is correct
 # adding user friendly error instructions help improve user experience
 
-# try and except
+# try and except are used to catch errors and are coded in by the programmer
 try:
     # some code to try
 
