@@ -1,9 +1,17 @@
-try:
-    total_value = float(input("Enter total value: "))
-    value = float(input("Enter value:"))
+# try:
+#     total_value = float(input("Enter total value: "))
+#     value = float(input("Enter value:"))
+#
+#     percent = value/total_value * 100
+#     print(f"That is {percent}%")
+#
+# except ZeroDivisionError:
+#     print("Your total value cannot be zero.")
 
-    percent = value/total_value * 100
-    print(f"That is {percent}%")
+colors = [11, 34, 98, 43, 45, 54, 54]
 
-except ZeroDivisionError:
-    print("Your total value cannot be zero.")
+for color in colors:
+    if color > 50:
+        print(color)
+    else:
+        continue
