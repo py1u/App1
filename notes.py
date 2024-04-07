@@ -346,3 +346,38 @@ result = {} # empty dictionary
 
 if all(result) # checks the keys which is all true
         result.value() # checks the values instead
+
+user_action.startswith("edit")
+#checks if variable user_action starts with 'edit' string
+
+# error handling helps users better understand if their input is correct
+# adding user friendly error instructions help improve user experience
+
+# try and except are used to catch errors and are coded in by the programmer
+try:
+    # some code to try
+
+except ValueError:
+    # if we run into error something else happens here
+
+SyntaxError: # checks and returns error when a syntax is typed incorrectly
+# exceptions are logical errors
+
+# use if elif else when handling mutiple cases in exception handling
+
+exit # we use this to terminate the program
+exit("program exited") # you can add a print statement as well
+
+# basic function and function calling
+
+def greet(): # def is used to define or definition a function, greet is the name of the function
+# () holds arguments or can be empty and has no arguments
+
+def greet():
+    message = "hello"
+    return(message)
+
+greeting = greet() # the function greet is called and assigned a variable
+print(greeting)
+
+print(message) #this is incorrect because message variable is not accessible because it is internally declared
