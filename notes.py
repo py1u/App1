@@ -381,3 +381,4 @@ greeting = greet() # the function greet is called and assigned a variable
 print(greeting)
 
 print(message) #this is incorrect because message variable is not accessible because it is internally declared
+
