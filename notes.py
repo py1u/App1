@@ -368,3 +368,16 @@ SyntaxError: # checks and returns error when a syntax is typed incorrectly
 exit # we use this to terminate the program
 exit("program exited") # you can add a print statement as well
 
+# basic function and function calling
+
+def greet(): # def is used to define or definition a function, greet is the name of the function
+# () holds arguments or can be empty and has no arguments
+
+def greet():
+    message = "hello"
+    return(message)
+
+greeting = greet() # the function greet is called and assigned a variable
+print(greeting)
+
+print(message) #this is incorrect because message variable is not accessible because it is internally declared
