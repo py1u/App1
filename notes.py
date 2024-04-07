@@ -382,3 +382,6 @@ print(greeting)
 
 print(message) #this is incorrect because message variable is not accessible because it is internally declared
 
+AttributeError # means that method specificed does not exist for that object
+# ex: cannot use append method on a string datatype
+
