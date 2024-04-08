@@ -385,3 +385,7 @@ print(message) #this is incorrect because message variable is not accessible bec
 AttributeError # means that method specificed does not exist for that object
 # ex: cannot use append method on a string datatype
 
+numbers = "5 12"
+numbers.split(" ") # splits at every space " " and appends items into a list
+
+#decoupling
