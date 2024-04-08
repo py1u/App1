@@ -32,5 +32,14 @@ def strength(password):
     else:
         return "Weak Password"
 
-# 3
+# 3 calculates list of integers average
+
+def average(list):
+    sum_value = float(sum(list))
+
+    num_values = float(len(list))
+
+    avg = sum_value / num_values
+    return avg
+
 
