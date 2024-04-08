@@ -42,4 +42,10 @@ def average(list):
     avg = sum_value / num_values
     return avg
 
+# 4 basic greet function
+
+def greeting(person):
+    greeting = f"Hi {person}"
+    return greeting
+
 
