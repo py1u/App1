@@ -48,4 +48,14 @@ def greeting(person):
     greeting = f"Hi {person}"
     return greeting
 
+# 5 basic string concatenate function
 
+def concatenate(left_string, right_string):
+    return left_string + right_string
+
+# 6 proper grammer greeting
+
+def greeting(person):
+    person = person.title()
+    greeting = f"Hi {person}"
+    return greeting
