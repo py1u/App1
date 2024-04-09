@@ -400,7 +400,7 @@ make_cake() # calling this function will invoke the default parameter even when 
 
 make_cake("blue") # this overrides the default parameter "white" to "blue"
 
-#docstrings are used to create documentation
+#docstrings are used to create documentation like strings
 
 """ Here is some documentation comment"""
 # usually should be very short one line
@@ -410,3 +410,5 @@ this is the multiline string
 docstrings can be stored in a variable
 makes documentation easier and simplified
 """
+
+print(text) # now the text will print as shown above instead of one long line
