@@ -399,3 +399,6 @@ def make_cake(cakeColor = "white"):
 make_cake() # calling this function will invoke the default parameter even when we dont pass in a argument
 
 make_cake("blue") # this overrides the default parameter "white" to "blue"
+
+#docstrings are used to create documentation
+
