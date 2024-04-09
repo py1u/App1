@@ -388,4 +388,14 @@ AttributeError # means that method specificed does not exist for that object
 numbers = "5 12"
 numbers.split(" ") # splits at every space " " and appends items into a list
 
-#decoupling
+# default arguments
+
+def make_cake(cakeColor = "white"):
+    return print(f"cake color is: {cakeColor}")
+
+
+# cakeColor is set as a default argument "white"
+
+make_cake() # calling this function will invoke the default parameter even when we dont pass in a argument
+
+make_cake("blue") # this overrides the default parameter "white" to "blue"
